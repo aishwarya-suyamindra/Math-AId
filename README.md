@@ -126,6 +126,12 @@ Following successful model training, we prioritized user accessibility by integr
 
 ## Experiment results
 
+After 3 epochs of training, the fine-tuned model demonstrates a RougeLsum score of 0.55, indicating commendable performance in generating responses aligned with reference answers. The result suggests that the model has successfully captured reasoning steps and provided coherent explanations for math word problems. However, the score also signifies the presence of areas for improvement, particularly in refining the accuracy of mathematical computations within the generated answers. This suggests that while the model shows promise in understanding the reasoning behind solutions, there is an opportunity to enhance its precision in numerical calculations, ensuring more accurate final answers.
+
+The parameter choices are meticulously tailored to strike a balance between computational efficiency and model performance. The learning rate is set at 1e-04, offering a good starting point for fine-tuning. The batch sizes for training, evaluation, and testing are restricted to 4, and the maximum token length is capped at 150, aligning with the constraints of the computational environment. The optimizer of choice, AdamW, performs better than AdaFactor in terms of convergence speed which is crucial for training using limited resources. The linear learning rate scheduler ensures gradual adjustments during training, promoting a smoother convergence process. 
+
+The paramount focus remained on experimenting with various prompts during training to comprehensively validate the model's performance under diverse reasoning scenarios.
+
 Various prompts were utilized during experimentation to observe model outcomes. Examples include:
 
  1. Let's first prepare relevant information and make a plan. Execute the plan, ensuring accurate numerical calculation and logical consistency. Present the answer step-by-step.
@@ -143,11 +149,6 @@ In this instance, the generated equations are correct, but the explanation falls
 <img width="1345" alt="Screenshot 2023-12-13 at 10 47 28 PM" src="https://github.com/aishwarya-suyamindra/Math-AId/assets/32588574/9d8d6fc9-b643-48f1-b607-a1ccfdf5dea4">
 
 Here, the model accurately analyzes the problem but falters in executing the correct mathematical computations.
-
-
-After 3 epochs of training, the fine-tuned model demonstrates a RougeLsum score of 0.55, indicating commendable performance in generating responses aligned with reference answers. The result suggests that the model has successfully captured reasoning steps and provided coherent explanations for math word problems. However, the score also signifies the presence of areas for improvement, particularly in refining the accuracy of mathematical computations within the generated answers. This suggests that while the model shows promise in understanding the reasoning behind solutions, there is an opportunity to enhance its precision in numerical calculations, ensuring more accurate final answers.
-
-
 
 ## Discussion
 
