@@ -1,5 +1,5 @@
 # Math-AId
-Fine tuning an LLM to solve grade school math problems
+Fine tuning an LLM to solve grade school math problems!
 
 - [Overview](https://github.com/aishwarya-suyamindra/Math-AId/edit/main/README.md#overview)
 - [Experiment Setup](https://github.com/aishwarya-suyamindra/Math-AId#experiment-setup)
