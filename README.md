@@ -126,16 +126,24 @@ Following successful model training, we prioritized user accessibility by integr
 
 Various prompts were utilized during experimentation to observe model outcomes. Examples include:
 
- 1.Let's first prepare relevant information and make a plan. Execute the plan, ensuring accurate numerical calculation and logical consistency. Present the answer step-by-step.
+ 1. Let's first prepare relevant information and make a plan. Execute the plan, ensuring accurate numerical calculation and logical consistency. Present the answer step-by-step.
 
- 2.Answer the following question by reasoning step-by-step.
+ 2. Answer the following question by reasoning step-by-step.
  
- 3.Start by analyzing the problem and assigning relevant variables and constants. Construct equations for the question using these elements. Pay special attention to intermediate variables and determine their suitability for reuse in subsequent equations. Solve the problem step by step and show the answer.
+ 3. Start by analyzing the problem and assigning relevant variables and constants. Construct equations for the question using these elements. Pay special attention to intermediate variables and determine their suitability for reuse in subsequent equations. Solve the problem step by step and show the answer.
 
 A few sample outputs:
 
 <img width="1381" alt="Screenshot 2023-12-13 at 10 23 08 PM" src="https://github.com/aishwarya-suyamindra/Math-AId/assets/32588574/4ceacc41-058d-4a93-87f7-9813a93f5c2c">
 
+In this instance, the generated equations are correct, but the explanation falls short
+
+<img width="1345" alt="Screenshot 2023-12-13 at 10 47 28 PM" src="https://github.com/aishwarya-suyamindra/Math-AId/assets/32588574/9d8d6fc9-b643-48f1-b607-a1ccfdf5dea4">
+
+Here, the model accurately analyzes the problem but falters in executing the correct mathematical computations.
+
+
+After 3 epochs of training, the fine-tuned model demonstrates a RougeLsum score of 0.55, indicating commendable performance in generating responses aligned with reference answers. The result suggests that the model has successfully captured reasoning steps and provided coherent explanations for math word problems. However, the score also signifies the presence of areas for improvement, particularly in refining the accuracy of mathematical computations within the generated answers. This suggests that while the model shows promise in understanding the reasoning behind solutions, there is an opportunity to enhance its precision in numerical calculations, ensuring more accurate final answers.
 
 
 
