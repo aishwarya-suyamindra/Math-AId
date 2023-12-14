@@ -1,6 +1,14 @@
 # Math-AId
 Fine tuning an LLM to solve grade school math problems
 
+- [Overview](https://github.com/aishwarya-suyamindra/Math-AId/edit/main/README.md#overview)
+- [Experiment Setup](https://github.com/aishwarya-suyamindra/Math-AId/edit/main/README.md#experiment)
+- [Experiment Results]()
+- [Discussion]()
+- [Conclusion]()
+- [References]()
+
+
 ## Overview
 
 Our project aims to enhance mathematical problem-solving through the fine tuning of large language models. By leveraging the GSM8K dataset, which is composed of 8.5K diverse grade school math word problems, the objective is to develop an interactive chatbot capable of not just solving mathematical equations but also elucidating solutions in a user-friendly manner. The project delves into the challenging intersection of language understanding and mathematical reasoning, pushing the boundaries of machine learning's role in educational technology.
@@ -12,6 +20,10 @@ The proposed approach encompasses several stages: initial dataset exploration an
 Key components of the approach include employing pre-trained models for inference, fine-tuning models on the math dataset, incorporating prompt engineering to guide the model's reasoning, and integrating evaluation metrics for performance assessment.
  
 The results of the fine-tuned language model (LLM) on the math dataset reveal a promising capability in decoding the steps required to reach a final answer. Notably, the generation of intermediate steps demonstrates the model's proficiency in reasoning. However, a notable limitation is in the effective execution of mathematical computations, leading to inaccuracies in the final answers.
+
+### Usage
+To use the 
+
 
 ## Experiment setup
 ### Dataset:
@@ -89,9 +101,23 @@ Following successful model training, we prioritized user accessibility by integr
   ```
 
 - ***Model architecture***
-  Transfer learning is a technique where a model trained on one task is adapted for another related task. Instead of training a model from scratch for a specific task, transfer learning leverages knowledge gained from solving one problem to solve a different but related problem. The model can then be trained on smaller, labeled datasets to achieve different tasks. 
+  
+  Transfer learning is a technique where a model trained on one task is adapted for another related task. Instead of training a model from scratch for a specific task, transfer learning leverages knowledge gained from solving one problem to solve a different but related problem. The model can then be trained on smaller, labeled datasets to achieve different tasks.
 
-T5 employs an encoder-decoder architecture, making it well-suited for a variety of tasks, especially those involving sequence-to-sequence problems with input and output sequences that are of varying lengths. This is effective in handling diverse datasets and tasks by leveraging a pre-trained model on a range of unsupervised and supervised tasks.Each task is converted to a text-to-text format and the model is trained using teacher forcing, which means the training requires an input and a corresponding output sequence. So, the model is exposed to input-output pairs, refining its ability to generate accurate predictions.
-The encoder decoder model architecture consists of two key components: the encoder and the decoder. The encoder processes the input sequence and compresses the information into a fixed-size context vector. This vector encapsulates all the information in the input to help the decoder make more accurate predictions. The decoder uses this context vector to generate the output sequence. Attention mechanisms are used to enhance the ability to capture long-range dependencies and improve the overall performance of the model, across diverse applications.
-Beyond the original T5 model, several variants have been developed to address specific needs. For instance, UL2 and Flan-T5 are noteworthy adaptations. Flan, a pre-training method based on prompting, serves as the foundation for Flan-T5 models. These variants, such as google/flan-t5-small, google/flan-t5-base, google/flan-t5-large, google/flan-t5-xl, and google/flan-t5-xxl, are trained on the Flan collection of datasets. Each variant is tailored to different scales of tasks, providing a spectrum of options based on the complexity and size of the target applications.
+  T5 employs an encoder-decoder architecture, making it well-suited for a variety of tasks,  especially those involving sequence-to-sequence problems with input and output sequences that are of varying lengths. This is effective in handling diverse datasets and tasks by leveraging a pre-trained model on a range of unsupervised and supervised tasks.Each task is converted to a text-to-text format and the model is trained using teacher forcing, which means the training requires an input and a corresponding output sequence. So, the model is exposed to input-output pairs, refining its ability to generate accurate predictions.
+
+  The encoder decoder model architecture consists of two key components: the encoder and the decoder. The encoder processes the input sequence and compresses the information into a fixed-size context vector. This vector encapsulates all the information in the input to help the decoder make more accurate predictions. The decoder uses this context vector to generate the output sequence. Attention mechanisms are used to enhance the ability to capture long-range dependencies and improve the overall performance of the model, across diverse applications.
+
+  Beyond the original T5 model, several variants have been developed to address specific needs. For instance, UL2 and Flan-T5 are noteworthy adaptations. Flan, a pre-training method based on prompting, serves as the foundation for Flan-T5 models. These variants, such as google/flan-t5-small, google/flan-t5-base, google/flan-t5-large, google/flan-t5-xl, and google/flan-t5-xxl, are trained on the Flan collection of datasets. Each variant is tailored to different scales of tasks, providing a spectrum of options based on the complexity and size of the target applications.
+
+
+## Experiment results
+
+
+## Discussion
+
+## Conclusion
+
+## References
+
    
