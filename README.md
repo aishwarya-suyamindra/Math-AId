@@ -35,6 +35,7 @@ You can use the below commands:
  conda activate your_env_name
  pip install -r requirements.txt
  ```
+Then, the gradio file can be used to load a pre-trained model. Run the gradio notebook `Gradio.ipynb` cell by cell. This will generate a local host link. Naviagte to the provided link to start interacting with the model.
 
 ## Experiment setup
 ### Dataset:
