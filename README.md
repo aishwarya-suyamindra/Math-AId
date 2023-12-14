@@ -81,7 +81,7 @@ Further research led us to Flan-T5. Flan is a pre-training method based on promp
   training_steps = 3* no_of train batches.
   ```
 
-  ROGUE (Recall-Oriented Understudy for Gisting Evaluation) is the metric used for evaluation.  It operates by comparing automatically generated outputs(model generated text-solution)) against reference outputs, which are typically human-produced summaries or translations(‘answer’ field).
+  **Evaluation:** ROGUE (Recall-Oriented Understudy for Gisting Evaluation) is the metric used for evaluation.  It operates by comparing automatically generated outputs(model generated text-solution)) against reference outputs, which are typically human-produced summaries or translations(‘answer’ field).
 ROUGE computes precision and recall scores based on the overlap between the generated and reference outputs. This overlap is measured at different levels, such as unigrams (rouge1), bigrams (rouge2), and longest common substrings (rougeL and rougeLsum). In the context of math word problems, where the answers are accompanied by reasoning steps and explanations, the quality of the generated response goes beyond simple token overlap. ROUGE-Lsum, by considering the longest matching sequences over the entire summary, is well-suited for capturing the coherence and relevance of the generated reasoning steps and explanations.
 
 In our initial exploration with a base language model, we observed commendable abilities in problem comprehension for simple math word problems. However, the model faced challenges in accurately generating equations, particularly for more complex questions. To address this, we decided to upgrade to the flan-t5-large model, equipped with 783 million parameters.
