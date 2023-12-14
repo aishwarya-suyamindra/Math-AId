@@ -22,8 +22,15 @@ Key components of the approach include employing pre-trained models for inferenc
 The results of the fine-tuned language model (LLM) on the math dataset reveal a promising capability in decoding the steps required to reach a final answer. Notably, the generation of intermediate steps demonstrates the model's proficiency in reasoning. However, a notable limitation is in the effective execution of mathematical computations, leading to inaccuracies in the final answers.
 
 ### Usage
-To use the 
 
+You can either use the pre-trained model directly or engage with the model through the user-friendly chat interface. To engage the model through the user friendly chat interface, create a conda environment and install the required packages listed in the `requirements.txt` file.
+
+You can use the below commands:
+ ```
+ conda create --name your_env_name python=3.8
+ conda activate your_env_name
+ pip install -r requirements.txt
+ ```
 
 ## Experiment setup
 ### Dataset:
