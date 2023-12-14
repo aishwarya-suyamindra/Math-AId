@@ -124,6 +124,20 @@ Following successful model training, we prioritized user accessibility by integr
 
 ## Experiment results
 
+Various prompts were utilized during experimentation to observe model outcomes. Examples include:
+
+ 1.Let's first prepare relevant information and make a plan. Execute the plan, ensuring accurate numerical calculation and logical consistency. Present the answer step-by-step.
+
+ 2.Answer the following question by reasoning step-by-step.
+ 
+ 3.Start by analyzing the problem and assigning relevant variables and constants. Construct equations for the question using these elements. Pay special attention to intermediate variables and determine their suitability for reuse in subsequent equations. Solve the problem step by step and show the answer.
+
+A few sample outputs:
+
+<img width="1381" alt="Screenshot 2023-12-13 at 10 23 08 PM" src="https://github.com/aishwarya-suyamindra/Math-AId/assets/32588574/4ceacc41-058d-4a93-87f7-9813a93f5c2c">
+
+
+
 
 ## Discussion
 
