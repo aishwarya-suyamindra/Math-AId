@@ -161,6 +161,10 @@ Another avenue for future exploration involves modifying the training strategy t
 In summary, while the current results showcase the model's prowess in reasoning, addressing the observed computational inaccuracies requires a nuanced approach. By refining prompts, balancing training objectives, and exploring additional dimensions, the model can potentially evolve into a more impactful tool for enhancing mathematical reasoning abilities.
 
 ## Conclusion
+The project sought to enhance mathematical problem-solving by fine-tuning large language models using the GSM8K dataset. Leveraging pre-trained models and prompt engineering, the approach aimed to improve the model's reasoning ability and create a symbiotic relationship between language understanding and mathematical reasoning. The fine-tuned model displayed promising proficiency in decoding reasoning steps, achieving a RougeLsum score of 0.55. While demonstrating coherent intermediate solutions, the model showed limitations in precise mathematical computations, indicating room for improvement.
+
+Carefully chosen parameters, including learning rate, batch sizes, and optimizer, contributed to computational efficiency. Various prompts were explored during training, providing comprehensive insights into the model's performance. Looking ahead, potential improvements involve experimenting with chain of thought code prompts and balancing training objectives to refine the model's computational accuracy. The project's holistic approach aims to create a more impactful tool for enhancing students' mathematical reasoning abilities.
+
 
 ## References
 
