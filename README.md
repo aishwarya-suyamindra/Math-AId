@@ -2,12 +2,11 @@
 Fine tuning an LLM to solve grade school math problems
 
 - [Overview](https://github.com/aishwarya-suyamindra/Math-AId/edit/main/README.md#overview)
-- [Experiment Setup](https://github.com/aishwarya-suyamindra/Math-AId/edit/main/README.md#experiment)
-- [Experiment Results]()
-- [Discussion]()
-- [Conclusion]()
-- [References]()
-
+- [Experiment Setup](https://github.com/aishwarya-suyamindra/Math-AId#experiment-setup)
+- [Experiment Results](https://github.com/aishwarya-suyamindra/Math-AId#experiment-results)
+- [Discussion](https://github.com/aishwarya-suyamindra/Math-AId#discussion)
+- [Conclusion](https://github.com/aishwarya-suyamindra/Math-AId#conclusion)
+- [References](https://github.com/aishwarya-suyamindra/Math-AId#references)
 
 ## Overview
 
@@ -128,8 +127,21 @@ Following successful model training, we prioritized user accessibility by integr
 
 ## Discussion
 
+As specified earlier, the fine-tuned Language Model (LLM) exhibits promise in decoding steps for arriving at a final answer. Proficiency in reasoning is evident through the generation of intermediate steps. However, a notable limitation lies in the model's effectiveness in executing mathematical computations, resulting in inaccuracies within the final answers.
+
+One potential explanation for this is in the emphasis of the training process. During the training phase, the prompts we utilized were designed to enhance the model's reasoning ability. This may have resulted in the observed discrepancy between the generated steps and the accurate computation of the final answer.
+In contemplating future improvements, one option we aim to explore further is chain of thought code prompts as opposed to natural language prompts. This potential shift aims to investigate whether structuring prompts in a more code-oriented format could enhance the model's understanding of mathematical intricacies and potentially improve computational accuracy. There is relevant research supporting the same. 
+
+Another avenue for future exploration involves modifying the training strategy to strike a balance between enhancing reasoning abilities and refining mathematical computations. 
+In summary, while the current results showcase the model's prowess in reasoning, addressing the observed computational inaccuracies requires a nuanced approach. By refining prompts, balancing training objectives, and exploring additional dimensions, the model can potentially evolve into a more impactful tool for enhancing mathematical reasoning abilities.
+
 ## Conclusion
 
 ## References
 
-   
+- https://towardsdatascience.com/understanding-encoder-decoder-sequence-to-sequence-model-679e04af4346
+- https://huggingface.co/docs/transformers/model_doc/t5
+- https://huggingface.co/datasets/gsm8k
+- https://github.com/openai/grade-school-math
+- https://arxiv.org/abs/2201.11903
+- https://arxiv.org/abs/2303.05398
