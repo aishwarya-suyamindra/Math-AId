@@ -170,3 +170,4 @@ In summary, while the current results showcase the model's prowess in reasoning,
 - https://github.com/openai/grade-school-math
 - https://arxiv.org/abs/2201.11903
 - https://arxiv.org/abs/2303.05398
+- https://arxiv.org/pdf/2307.02047.pdf#:~:text=As%20shown%20in%20Figure%202,scenarios%20of%20memory%2Defficient%20optimizers
