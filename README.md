@@ -27,7 +27,7 @@ Key components of the approach include employing pre-trained models for inferenc
 
 ### Usage
 
-You can either use the pre-trained model directly or engage with the model through the user-friendly chat interface. To engage the model through the user friendly chat interface, create a conda environment and install the required packages listed in the `requirements.txt` file.
+The pre-trained model can be used directly, or thhe model can be interacted with through the user-friendly chat interface. To engage with the model through the user friendly chat interface, create a conda environment and install the required packages listed in the `requirements.txt` file.
 
 You can use the below commands:
  ```
